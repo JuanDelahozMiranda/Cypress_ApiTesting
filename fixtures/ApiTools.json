@@ -1,0 +1,16 @@
+{
+  "tools":{
+    "testing":[{"id":1, "name":"Cypress"},
+               {"id":2, "name":"Postman"},
+               {"id":3, "name":"Rest assured"}, 
+               {"id":4, "name":"Python"},
+               {"id":5, "name":"Uipath"}
+              ],
+    "sience":[],
+    "Dev":[{"id":1, "name":"C#"},
+           {"id":2, "name":"Java"},
+           {"id":3, "name": "C++"}, 
+           {"id":4, "name":"Python"}
+          ]
+        }
+}
