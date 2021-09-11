@@ -1,6 +1,1 @@
-{
-    "scripts": {
-        "cypress:open": "npx cypress open",
-        "run_test1" : "npx cypress run xx --headless chrome"
-      },
-}
+{}

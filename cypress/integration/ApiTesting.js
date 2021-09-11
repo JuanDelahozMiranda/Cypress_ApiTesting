@@ -48,21 +48,7 @@ describe('ApiTesting_Demo', ()=>{
                     console.log('Response_Body: ',response.body)
     })
   })
-
-  it('Test 4 - Request Delete Success', ()=>{
-    cy.request({method: 'DELETE', 
-                url:'https://petstore.swagger.io/v2/store/order/88', 
-                failOnStatusCode: false, 
-                headers: {'Content-Type': 'application/json'}}).then((response)=>{
-                    expect(response.status).to.eq(200)
-                    expect(response.body).to.have.property('code', 200)
-                    expect(response.body).to.have.property('type', 'unknown')
-                    expect(response.body).to.have.property('message', '88')
-                    console.log('Response_Body: ',response.body)
-    })
-  })
-
-  it('Test 5 - Request Delete Fail', ()=>{
+  it('Test 4 - Request Delete Fail', ()=>{
     cy.request({method: 'DELETE', 
                 url:'https://petstore.swagger.io/v2/store/order/99', 
                 failOnStatusCode: false, 
@@ -71,6 +57,19 @@ describe('ApiTesting_Demo', ()=>{
                     expect(response.body).to.have.property('code', 404)
                     expect(response.body).to.have.property('type', 'unknown')
                     expect(response.body).to.have.property('message', 'Order Not Found')
+                    console.log('Response_Body: ',response.body)
+    })
+  })
+  
+  it('Test 5 - Request Delete Success', ()=>{
+    cy.request({method: 'DELETE', 
+                url:'https://petstore.swagger.io/v2/store/order/88', 
+                failOnStatusCode: false, 
+                headers: {'Content-Type': 'application/json'}}).then((response)=>{
+                    expect(response.status).to.eq(200)
+                    expect(response.body).to.have.property('code', 200)
+                    expect(response.body).to.have.property('type', 'unknown')
+                    expect(response.body).to.have.property('message', '88')
                     console.log('Response_Body: ',response.body)
     })
   })

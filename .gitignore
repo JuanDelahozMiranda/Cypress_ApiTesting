@@ -1,0 +1,13 @@
+# packaging
+node_modules/
+
+# Cy:reports
+cypress/videos
+cypress/screenshots
+
+# Files
+*.JPEG
+*.PNG
+*.SVG
+*.MP4
+.cache
