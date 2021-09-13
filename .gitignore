@@ -4,6 +4,9 @@ node_modules/
 # Cy:reports
 cypress/videos
 cypress/screenshots
+cypress/fixtures
+cypress/plugins
+cypress/support
 
 # Files
 *.JPEG
